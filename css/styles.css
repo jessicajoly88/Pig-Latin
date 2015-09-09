@@ -1,3 +1,14 @@
 #result {
   display:none;
+  font-size: 50;
+  color: purple;
+}
+
+.jumbotron {
+  font-size: 15px;
+  background-color: white;
+}
+
+body {
+  background-color: teal;
 }
