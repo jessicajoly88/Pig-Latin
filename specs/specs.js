@@ -8,6 +8,10 @@ describe('pigLatin', function() {
   });
 
   it("removes the block of consonants found at the beginning of a word and adds it to the end plus adds ay", function(){
-    expect(pigLatin("brown")).to.equal("ownbray");
+    expect(pigLatin("christmas")).to.equal("istmaschray");
+  });
+
+  it("takes into account that the letters q and u stay together",function(){
+    expect(pigLatin("quest")).to.equal("estquay")
   });
 });
