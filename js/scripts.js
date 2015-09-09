@@ -27,3 +27,15 @@ var pigLatin = function(word) {
       return pigWord;
   }
 };
+
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    var word = ($("input#word").val());
+    var result = pigLatin(word);
+
+  $(".pig-latin-word").text(result);
+
+  $("#result").show();
+  event.preventDefault();
+  });
+});
