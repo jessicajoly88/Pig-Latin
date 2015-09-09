@@ -4,7 +4,7 @@ var pigLatin = function(word) {
   var first_letter = letters[0];
 
 
-//if it begins with a vowel, leave it and add ay at the end
+
   if (vowels.indexOf(first_letter) !== -1) {
     return word.concat("ay");
   } else {
@@ -19,7 +19,7 @@ var pigLatin = function(word) {
           letters.push(letters.shift());
           first_letter = letters[0];
           }
-//keep doing this until you hit a vowel
+
       while(vowels.indexOf(first_letter) === -1 );
 
       var newWord = letters.join("");
@@ -27,5 +27,3 @@ var pigLatin = function(word) {
       return pigWord;
   }
 };
-
-//&& (first_letter === ["q"] && second_letter === ["u"])
