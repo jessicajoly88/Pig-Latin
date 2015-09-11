@@ -10,12 +10,9 @@ var pigLatin = function(word) {
   } else {
       do {
           if (first_letter === "q") {
-          var q = letters.splice(0, 1);
-          var u = letters.splice(0, 1);
-          letters.push(q);
-          letters.push(u);
+          var qu = letters.splice(0, 1);
+          letters.push(qu);
           }
-
           letters.push(letters.shift());
           first_letter = letters[0];
           }
